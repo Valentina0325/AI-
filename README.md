@@ -94,6 +94,8 @@ csv-dashboard/
 └── README.md
 ```
 
+> 注：为了快速开发，所有核心逻辑集中在 `app/page.tsx` 中。但内部使用了 `useState`、`useEffect`、`useMemo`、`useCallback`、`useRef` 等 React Hooks，并实现了防抖、虚拟滚动、localStorage 持久化等工程实践。
+
 ## 🧩 核心代码逻辑说明
 
 ### CSV 解析与文件管理
@@ -131,7 +133,7 @@ csv-dashboard/
 
 ## 📄 API 接口
 
-###  POST `/api/ai-report`
+### POST `/api/ai-report`
 
 **请求体**
 
@@ -182,11 +184,10 @@ csv-dashboard/
 
 
 ## 🙏 致谢
-- [Next.js](https://nextjs.org/) for the amazing React framework
+
+- [Vercel](https://vercel.com/) for Next.js
 - [智谱 AI](https://open.bigmodel.cn/) for GLM-4-Flash API
 - [ECharts](https://echarts.apache.org/) for powerful charting
 - [shadcn/ui](https://ui.shadcn.com/) for beautiful Table components
-```
-
 
 
